@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Island - Магазин комнатных растений</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img class="main__logo-img" src="images/logo_flower_island(final).png" alt="Green Haven Logo">
+            </div>
+            <div class="header-actions">
+                <a href="tel:+79001234567" class="header-contact">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone-number">+7 900 123-45-67</span>
+                </a>
+                <a href="#" class="header-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">Зелёный уголок счастья в вашем доме</h1>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Каталог</a>
+                <a href="#plant-finder" class="btn btn-secondary">Подобрать растение</a>
+            </div>
+            <div class="search-container">
+                <div class="search-params">
+                    <select id="light-level">
+                        <option value="">Освещение</option>
+                        <option value="low">Тень</option>
+                        <option value="medium">Полутень</option>
+                        <option value="high">Свет</option>
+                    </select>
+                    <select id="water-level">
+                        <option value="">Полив</option>
+                        <option value="low">Редкий</option>
+                        <option value="medium">Умеренный</option>
+                        <option value="high">Частый</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Characters Section with Carousel -->
+    <section class="plant-characters">
+        <h2 class="plant__chat-title">Наши питомцы</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/sansevieria.png" alt="Сансевиерия">
+                <h3>Неувядаящая сансевиерия</h3>
+                <p>для занятых</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/orchid.png" alt="Орхидея">
+                <h3>Романтичная <br> орхидея</h3>
+                <p>для эстетов</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chlorophytum.png" alt="Орхидея">
+                <h3>Воздушный <br> хлорофитум</h3>
+                <p>для легких натур</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/monstera.png" alt="Орхидея">
+                <h3>Величественная <br> монстера</h3>
+                <p>для амбициозных</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/zamioculcas.png" alt="Орхидея">
+                <h3>Неприхотливый<br>замиокулькас</h3>
+                <p>для прагматиков</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/kalanchoe.jpg" alt="Орхидея">
+                <h3>Жизнерадостный<br>каланхоэ</h3>
+                <p>для оптимистов</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/ficus.png" alt="Орхидея">
+                <h3>Загадочный<br>фикус</h3>
+                <p>для философов</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/peperomia.png" alt="Орхидея">
+                <h3>Энергичная<br>пеперомия</h3>
+                <p>для деятелей</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/anthurium.png" alt="Орхидея">
+                <h3>Утонченный<br>антуриум</h3>
+                <p>для ценителей роскоши</p>
+                <div class="care-icons">
+                    <i class="fas fa-sun" title="Свет"></i>
+                    <i class="fas fa-tint" title="Полив"></i>
+                    <i class="fas fa-temperature-high" title="Температура"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Story Section -->
+    <section class="shop-story">
+        <div class="container">
+            <h2 class="about-title">О нашем магазине</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p class="story-intro">Flower Island - это не просто магазин комнатных растений, это место, где природа встречается с искусством создания уюта.</p>
+                    
+                    <div class="story-block">
+                        <h3 class="about-subtitle">Наша история</h3>
+                        <p>Основанный в 2020 году группой энтузиастов-ботаников, наш магазин начал свой путь с небольшой теплицы и мечты о создании пространства, где каждый сможет найти своего зеленого друга. За эти годы мы выросли в полноценный центр по уходу за растениями, сохраняя при этом индивидуальный подход к каждому клиенту.</p>
+                    </div>
+
+                    <div class="story-block">
+                        <h3 class="about-subtitle">Уникальные особенности</h3>
+                        <p>Мы гордимся тем, что:</p>
+                        <ul class="features-list">
+                            <li>Лично отбираем каждое растение у проверенных поставщиков</li>
+                            <li>Предоставляем подробные консультации по уходу</li>
+                            <li>Гарантируем 30-дневную адаптацию растений</li>
+                            <li>Организуем мастер-классы по уходу за растениями</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-block">
+                        <h3 class="about-subtitle">Наши преимущества</h3>
+                        <p>В Flower Island мы создали особую атмосферу заботы о растениях:</p>
+                        <ul class="advantages-list">
+                            <li>Профессиональные консультанты с многолетним опытом</li>
+                            <li>Собственная система контроля качества растений</li>
+                            <li>Удобная доставка с особой заботой о растениях</li>
+                            <li>Программа лояльности для постоянных клиентов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="container">
+            <h2 class="cat-title">Каталог растений</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все растения</button>
+                <button class="filter-btn" data-filter="beginner">Для начинающих</button>
+                <button class="filter-btn" data-filter="shade">Тенелюбивые</button>
+                <button class="filter-btn" data-filter="flowering">Цветущие</button>
+            </div>
+            <div class="products-grid">
+                <div data-product-id="1" class="product-card" data-category="beginner">
+                    <div class="product-image">
+                        <img src="images/sansevieria.png" alt="Сансевиерия">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Сансевиерия</h3>
+                        <p class="product-description">Неприхотливое растение для начинающих. Идеальна для офисов и забывчивых цветоводов</p>
+                        <div class="product-meta">
+                            <span class="price">1200 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-product-id="2" class="product-card" data-category="flowering">
+                    <div class="product-image">
+                        <img src="images/orchid.png" alt="Орхидея">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Орхидея Фаленопсис</h3>
+                        <p class="product-description">Изящное цветущее растение.<br> Идеален для подарка и украшения интерьера</p>
+                        <div class="product-meta">
+                            <span class="price">2500 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shade">
+                    <div class="product-image">
+                        <img src="images/zamioculcas.png" alt="Замиокулькас">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Замиокулькас</h3>
+                        <p class="product-description">Символизирует финансовое благополучие. Идеален для затененных мест</p>
+                        <div class="product-meta">
+                            <span class="price">1800 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beginner">
+                    <div class="product-image">
+                        <img src="images/ficus.png" alt="Ficus">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Фикус</h3>
+                        <p class="product-description">Добавьте ноту свежести в свой дом. Идеален для создания уюта и зелёных акцентов</p>
+                        <div class="product-meta">
+                            <span class="price">2000 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beginner">
+                    <div class="product-image">
+                        <img src="images/chlorophytum.png" alt="Хлорофитум">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Хлорофитум</h3>
+                        <p class="product-description">Неприхотливый "зелёный фонтанчик". Воздухоочищающий. Идеален для начинающих цветоводов </p>
+                        <div class="product-meta">
+                            <span class="price">1500 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shade">
+                    <div class="product-image">
+                        <img src="images/monstera.png" alt="Monstera">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Монстера</h3>
+                        <p class="product-description">Идеально подходит для просторных помещений, создавая атмосферу джунглей</p>
+                        <div class="product-meta">
+                            <span class="price">3500 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="flowering">
+                    <div class="product-image">
+                        <img src="images/kalanchoe.jpg" alt="Kalanchoe">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Каланхоэ</h3>
+                        <p class="product-description">Обладает лечебными свойствами.Идеально для занятых цветоводов </p>
+                        <div class="product-meta">
+                            <span class="price">1800 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shade">
+                    <div class="product-image">
+                        <img src="images/peperomia.png" alt="Peperomia">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Пеперомия</h3>
+                        <p class="product-description">Очаровательное компактное растение. Подходит для флорариумов. Идеально для небольших пространств. </p>
+                        <div class="product-meta">
+                            <span class="price">1800 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="flowering">
+                    <div class="product-image">
+                        <img src="images/anthurium.png" alt="Anturium">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Антуриум</h3>
+                        <p class="product-description">Любит тепло и влажность. Идеален для создания экзотического акцента в интерьере </p>
+                        <div class="product-meta">
+                            <span class="price">2800 ₽</span>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Добавьте больше карточек товаров по аналогии -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Finder Section -->
+    <section class="plant-finder">
+        <div class="container">
+            <h2>Подбери себе растение</h2>
+            <div class="quiz-container">
+                <div class="quiz-step" id="step1">
+                    <h3>Какой у вас опыт в уходе за растениями?</h3>
+                    <div class="options">
+                        <button class="option" data-experience="beginner">Я новичок</button>
+                        <button class="option" data-experience="intermediate">Есть небольшой опыт</button>
+                        <button class="option" data-experience="expert">Я опытный растениевод</button>
+                    </div>
+                </div>
+                <div class="quiz-step" id="step2" style="display: none;">
+                    <h3>Сколько света в вашем помещении?</h3>
+                    <div class="options">
+                        <button class="option" data-light="low">Мало света (северная сторона)</button>
+                        <button class="option" data-light="medium">Умеренное освещение</button>
+                        <button class="option" data-light="high">Много света (южная сторона)</button>
+                    </div>
+                </div>
+                <div class="quiz-step" id="step3" style="display: none;">
+                    <h3>Как часто вы готовы ухаживать за растением?</h3>
+                    <div class="options">
+                        <button class="option" data-care="low">Минимальный уход</button>
+                        <button class="option" data-care="medium">1-2 раза в неделю</button>
+                        <button class="option" data-care="high">Готов уделять много времени</button>
+                    </div>
+                </div>
+                <div class="quiz-results" style="display: none;">
+                    <h3>Идеальные растения для вас:</h3>
+                    <div class="results-grid"></div>
+                    <div class="restart__quiz">
+                        <button class="restart-quiz-btn">Начать сначала</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Guide Section -->
+    <section class="care-guide">
+        <div class="container">
+            <h2>Уход с душой</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/lounging.png" alt="Неприхотливые растения">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Топ-10 самых неприхотливых комнатных растений для начинающих</h3>
+                        <p>Узнайте, какие растения идеально подходят для начинающих цветоводов и не требуют сложного ухода.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 10 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/question.png" alt="Первое растение">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Как выбрать первое комнатное растение: гид для новичков</h3>
+                        <p>Пошаговое руководство по выбору вашего первого зеленого друга с учетом условий в доме и вашего образа жизни.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 8 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/clean.png" alt="Очищающие воздух растения">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Комнатные растения, которые очищают воздух</h3>
+                        <p>Узнайте о растениях, которые не только украшают интерьер, но и помогают создать более здоровую атмосферу в доме.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 6 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/sleep.png" alt="Растения для спальни">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Лучшие растения для спальни: какие цветы помогают спать</h3>
+                        <p>Исследуем, какие растения способствуют здоровому сну и создают расслабляющую атмосферу в спальне.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 9 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/snow.png" alt="Уход за растениями зимой">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Как ухаживать за растениями зимой: 5 важных правил</h3>
+                        <p>Практические советы по уходу за комнатными растениями в холодное время года.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 5 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/shade.png" alt="Растения для северных окон">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Какие растения подходят для северных окон?</h3>
+                        <p>Подборка теневыносливых растений, которые будут прекрасно себя чувствовать даже при недостатке естественного освещения.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 7 мин чтения</span>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="revievs-title">Отзывы наших клиентов</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Заказала несколько растений для офиса. Все приехали в отличном состоянии, красиво упакованные. Особенно понравилась консультация по уходу - теперь знаю всё о своих новых питомцах!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Анна Смирнова</span>
+                        <span class="author-date">15 марта 2024</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Первый раз заказывала растения онлайн - очень переживала. Но всё прошло отлично! Растения здоровые, доставка быстрая. Теперь мой дом стал намного уютнее."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Мария Петрова</span>
+                        <span class="author-date">10 марта 2024</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Отличный магазин! Широкий выбор растений, профессиональные консультации. Заказал орхидею для мамы - она в восторге. Обязательно закажу ещё!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Дмитрий Иванов</span>
+                        <span class="author-date">5 марта 2024</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Регулярно заказываю растения в этом магазине. Всегда свежие, здоровые экземпляры. Особенно нравится, что можно получить подробную консультацию по уходу."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Елена Козлова</span>
+                        <span class="author-date">1 марта 2024</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Заказала набор неприхотливых растений для начинающих. Всё пришло вовремя, растения в отличном состоянии. Спасибо за подробные инструкции по уходу!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Ольга Морозова</span>
+                        <span class="author-date">25 февраля 2024</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Отличный сервис! Заказал несколько растений для офиса, все приехали в идеальном состоянии. Особенно понравилась быстрая доставка и внимательное отношение к клиентам."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Александр Волков</span>
+                        <span class="author-date">20 февраля 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ваша корзина</h3>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-summary">
+                <div class="total-items">
+                    <span>Товаров в корзине:</span>
+                    <span class="items-count">0</span>
+                </div>
+                <div class="total-price">
+                    <span>Итого:</span>
+                    <span class="final-price">0 ₽</span>
+                </div>
+                <button class="checkout-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plant Modal -->
+    <div class="plant-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img class="modal-image" src="" alt="">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+            <div class="care-details">
+                <div class="care-detail">
+                    <i class="fas fa-sun"></i>
+                    <h4>Освещение</h4>
+                    <p class="light-detail"></p>
+                </div>
+                <div class="care-detail">
+                    <i class="fas fa-tint"></i>
+                    <h4>Полив</h4>
+                    <p class="water-detail"></p>
+                </div>
+                <div class="care-detail">
+                    <i class="fas fa-temperature-high"></i>
+                    <h4>Температура</h4>
+                    <p class="temp-detail"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="newsletter">
+                    <h3>Подпишитесь на рассылку</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button class="submit-btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>Email: info@greenhaven.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <div class="working-hours">
+                        <h4>График работы:</h4>
+                        <p>Пн-Пт: 9:00 - 20:00</p>
+                        <p>Сб-Вс: 10:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="map" id="map">
+                    <!-- Здесь будет карта -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Flower Island. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
